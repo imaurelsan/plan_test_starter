@@ -1,0 +1,15 @@
+{
+    "name": "romai/book-php-api",
+    "require": {
+        "phpunit/phpunit": "^13.2"
+    },
+    "authors": [
+        {
+            "name": "romainsessa",
+            "email": "romainsessa@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit"
+    }
+}

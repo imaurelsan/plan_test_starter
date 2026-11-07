@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Book list</h2>
+
+  <div class="book-grid">
+    @for (book of books; track book.id) {
+    <div class="book-card">
+
+      <div class="book-header">
+        <span class="book-id">#{{book.id}}</span>
+        <span class="status" [class]="book.status.toLowerCase()">
+          {{book.status}}
+        </span>
+      </div>
+
+      <h3>{{book.name}}</h3>
+      <p>{{book.description}}</p>
+
+      @if (canReserve(book)) {
+      <button (click)="reserve(book.id)">Reserve</button>
+      }
+
+    </div>
+    }
+  </div>
+</div>
